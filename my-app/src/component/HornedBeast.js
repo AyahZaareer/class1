@@ -27,7 +27,7 @@ class HornedBeast extends React.Component{
              <Card.Text>
              {this.props.description}
              </Card.Text>
-             <Card.Text>💙
+             <Card.Text>❤️
              {this.state.rate}
              </Card.Text>
              <Button onClick={this.addRate}variant="primary">Rate</Button>
