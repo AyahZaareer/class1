@@ -2,7 +2,7 @@ import React from 'react';
 class Header extends React.Component{
     render(){
         return(
-            <h1>Rhino Family</h1>
+            <h1>Gallery or Horn</h1>
         )
     };
 }
