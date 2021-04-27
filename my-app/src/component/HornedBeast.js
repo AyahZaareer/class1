@@ -20,7 +20,7 @@ class HornedBeast extends React.Component{
     
         render (){
             return (
-             <Card style={{ width: '30rem',margin:'3rem 37rem 3rem 30rem', color:'#325288' , textAlign:'center', border:'2px solid #114e60'}}>
+             <Card style={{ width: '20rem', height:'33rem', color:'#325288' , textAlign:'center', border:'2px solid #114e60'}}>
              <Card.Img  src={this.props.image_url} />
              <Card.Body>
              <Card.Title>{this.props.title}</Card.Title>

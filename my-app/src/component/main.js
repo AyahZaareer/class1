@@ -1,5 +1,6 @@
 import React from 'react';
 import HornedBeast from './HornedBeast';
+import CardColumns from 'react-bootstrap/CardColumns';
 
 
 
@@ -156,15 +157,17 @@ class Main extends React.Component {
     render() {
          const listOfAnimal=this.state.arrayOfAnimals.map(animal=>{
           return(
-            < HornedBeast title={animal.title} image_url={animal.image_url} description={animal.description} />
+            < HornedBeast title={animal.title} 
+            image_url={animal.image_url} 
+            description={animal.description} />
            );    
          })
          return (
             
-            <div>
+            < CardColumns>
                 {listOfAnimal}
 
-            </div>
+            </ CardColumns>
 
          )
     };
