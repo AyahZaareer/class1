@@ -1,40 +1,35 @@
-import React from 'react';import React from 'react';
+import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
+import Modal from 'react-bootstrap/Modal';
 
 
-class HornedBeast extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      rate: 0
-    };
+class SelectedBeast extends React.Component {
 
-  }
-  addRate = () => {
-    this.setState({
-      rate: this.state.rate + 1
-    });
-  }
 
   render() {
     return (
-      <Card style={{ width: '20rem', color: '#0064ED', textAlign: 'center', border: '2px solid #00ADBE' }}>
-        <Card.Img style={{width: '19rem',}} src={this.props.image_url} />
-        <Card.Body>
-          <Card.Title>{this.props.title}</Card.Title>
-          <Card.Text>
-            {this.props.description}
-          </Card.Text>
-          <Card.Text>💙{this.state.rate}</Card.Text>
-          <Button onClick={this.addRate} variant="primary">Rate</Button>
-        </Card.Body>
-      </Card>
+      <div>
+        <Modal show={this.props.show} onHide={this.props.closing}>
+          <Modal.Header closeButton>
+            <Modal.Title>{this.props.info.title}</Modal.Title>
+          </Modal.Header>
+          <Card.Img variant="top" style={{ width: '14rem' }} src={this.props.info.image_url} />
+          <Modal.Body>
+            <p>{this.props.info.description}</p>
+          </Modal.Body>
+          <Modal.Footer>
+            <Button variant="secondary" onClick={this.props.closing}>
+              Close
+            </Button>
+          </Modal.Footer>
+        </Modal>
+      </div>
     );
   }
 }
 
 
 
-export default HornedBeast;
+export default SelectedBeast;

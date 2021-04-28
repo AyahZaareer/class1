@@ -17,11 +17,17 @@ class HornedBeast extends React.Component {
       rate: this.state.rate + 1
     });
   }
+  display=()=>{
+    this.props.viewBeast(this.props);
+    this.setState=({
+      rate: this.state.rate + 1
+    });
+  }
 
   render() {
     return (
       <Card style={{ width: '20rem', color: '#0064ED', textAlign: 'center', border: '2px solid #00ADBE' }}>
-        <Card.Img style={{width: '19rem',}} src={this.props.image_url} />
+        <Card.Img onClick={this.display} style={{width: '19rem'}} src={this.props.image_url} />
         <Card.Body>
           <Card.Title>{this.props.title}</Card.Title>
           <Card.Text>
