@@ -20,7 +20,7 @@
 
 **Actual time needed to complete:half  hour**
 
-### Number and name of feature:  feature#2 ( bootstap)
+### Number and name of feature:  feature#3 ( bootstap)
 
 **Estimate of time needed to complete:1 hour**
 
