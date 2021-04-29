@@ -1,3 +1,13 @@
+
+# React APP
+## This Project Web is Application displays images,description and name of horned animals.
+
+**-You Can rate for your favourite image by click on button.**
+
+**-Put Each information in card **
+
+
+
 ## class 2
 ### Number and name of feature:  feature#1 ( Display images)
 
