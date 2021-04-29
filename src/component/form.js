@@ -1,7 +1,6 @@
 import React from 'react';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
-import HornedBeast from './HornedBeast';
 
 class MyForm extends React.Component {
 
@@ -9,16 +8,7 @@ class MyForm extends React.Component {
   submitForm = (event) => {
     event.preventDefault();
     this.props.filterData(event);
-    return (
-      <div>
-        <HornedBeast
-          title={this.props.title}
-          image_url={this.props.image_url}
-          description={this.props.description}
-          viewBeast={this.props.viewBeast}
-        />
-      </div>
-    );
+
   }
 
 
