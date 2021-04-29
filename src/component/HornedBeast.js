@@ -41,6 +41,7 @@ class HornedBeast extends React.Component {
       </Card>
     );
   }
+
 }
 
 
