@@ -19,9 +19,11 @@ class HornedBeast extends React.Component {
   }
   display=()=>{
     this.props.viewBeast(this.props);
-    this.setState=({
+    this.setState({
       rate: this.state.rate + 1
+
     });
+
   }
 
   render() {
