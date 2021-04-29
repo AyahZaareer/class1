@@ -44,3 +44,18 @@ _________________________________________________________________________
 **Finish time: first day : 7:00pm , second day : 6:30pm**
 
 **Actual time needed to complete: 6 hours**
+
+
+
+_________________________________________________________________________
+
+## class 4
+### Number and name of feature: Feature #1 (Filter by Numbers of Horns)
+
+**Estimate of time needed to complete:1.5 hours**
+
+**Start time:  11:00pm**
+
+**Finish time:  3:30am**
+
+**Actual time needed to complete: 4.5 hours**
